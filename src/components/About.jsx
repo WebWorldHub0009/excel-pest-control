@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiCheckCircle } from 'react-icons/fi';
-import heroImg from '../assets/images/hero/about.jpg'; // your image
-import overlayLeaf from '../assets/images/hero/logo.png'; // optional: corner image
+import heroImg from '../assets/images/hero/about.jpg'; 
+import overlayLeaf from '../assets/images/hero/logo.png'; 
 
 export default function About() {
   return (

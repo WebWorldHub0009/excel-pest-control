@@ -13,19 +13,14 @@ const ExcelNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
-
   const navigate = useNavigate();
   const menuRef = useRef();
-
-
   const toggleMenu = () => setMenuOpen(!menuOpen);
-
   const handleClickOutside = (e) => {
     if (menuRef.current && !menuRef.current.contains(e.target)) {
       setMenuOpen(false);
     }
   };
-
   useEffect(() => {
     if (menuOpen) {
       document.addEventListener("mousedown", handleClickOutside);

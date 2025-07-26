@@ -7,7 +7,6 @@ import {
   FaBug,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import overlayLeaf from '../assets/images/hero/logo.png'; // optional: corner image
 
 const steps = [
   {
@@ -48,13 +47,7 @@ const steps = [
 const HowItWorks = () => {
   return (
     <section className="py-20 bg-[#f5fbf5]">
-       {overlayLeaf && (
-              <img
-                src={overlayLeaf}
-                alt="decorative leaf"
-                className="absolute top-8  left-4 w-48 opacity-40 pointer-events-none"
-              />
-            )}
+       
       <div className="text-center mb-14">
         <p className="text-sm text-green-700 font-medium uppercase tracking-widest">
           Simple 4-Step Process

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FiPhone, FiMail, FiMapPin, FiUser } from "react-icons/fi";
-// import ownerImage from "../assets/owner.jpg"; 
+import owner from "../assets/owner.jpg"; 
 
 export default function OwnerSection() {
   return (
@@ -10,31 +10,13 @@ export default function OwnerSection() {
       <div className="absolute bottom-[-50px] right-[-100px] w-[300px] h-[300px] bg-green-200 rounded-full blur-3xl opacity-30 animate-pulse" />
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center z-10 relative">
-        {/* Owner Image & Badge */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          className="relative"
-        >
-          <div className="rounded-2xl overflow-hidden shadow-xl border border-green-200">
-            <img
-              src={""}
-              alt="Jitendra Kumar Prasad"
-              className="object-cover w-full h-[400px]"
-            />
-          </div>
-          <div className="absolute bottom-4 left-4 bg-green-600 text-white text-xs md:text-sm px-4 py-2 rounded-full shadow-lg">
-            8+ Years of Excellence
-          </div>
-        </motion.div>
-
-        {/* Owner Info */}
+        
+        {/* Owner Info FIRST on mobile */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col gap-4 text-gray-800"
+          className="flex flex-col gap-4 text-gray-800 order-1 md:order-none"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-2">
             Meet the Founder
@@ -71,6 +53,25 @@ export default function OwnerSection() {
               <br />
               <strong>Established:</strong> 24/07/2017
             </p>
+          </div>
+        </motion.div>
+
+        {/* Owner Image (BELOW content on mobile) */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="relative order-2 md:order-none"
+        >
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-green-200">
+            <img
+              src={owner}
+              alt="Jitendra Kumar Prasad"
+              className="object-cover w-full h-[500px]"
+            />
+          </div>
+          <div className="absolute bottom-4 left-4 bg-green-600 text-white text-xs md:text-sm px-4 py-2 rounded-full shadow-lg">
+            8+ Years of Excellence
           </div>
         </motion.div>
       </div>

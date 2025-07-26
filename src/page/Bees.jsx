@@ -1,6 +1,10 @@
 import React from "react";
 import { FaCheckCircle, FaExclamationTriangle, FaCameraRetro } from "react-icons/fa";
 import ServiceSlider from "../components/ServiceSlider";
+import img1 from "../assets/images/service/b1.jpg"
+import img2 from "../assets/images/service/b2.jpg"
+import img3 from "../assets/images/service/b3.jpg"
+import img4 from "../assets/images/service/b4.jpg"
 
 export default function BeesWaspControl() {
   return (
@@ -100,22 +104,22 @@ export default function BeesWaspControl() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             <img
-              src="/images/bee-job1.jpg"
+              src={img1}
               alt="Bee nest removal 1"
               className="rounded-xl shadow-md object-cover h-52 w-full"
             />
             <img
-              src="/images/bee-job2.jpg"
+              src={img2}
               alt="Wasp control on roof"
               className="rounded-xl shadow-md object-cover h-52 w-full"
             />
             <img
-              src="/images/bee-job3.jpg"
+              src={img3}
               alt="Excel team removing nest"
               className="rounded-xl shadow-md object-cover h-52 w-full"
             />
             <img
-              src="/images/bee-job4.jpg"
+              src={img4}
               alt="Wasps treated in attic"
               className="rounded-xl shadow-md object-cover h-52 w-full"
             />

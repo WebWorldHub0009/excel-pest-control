@@ -8,6 +8,10 @@ import {
   FaCameraRetro
 } from "react-icons/fa";
 import ServiceSlider from "../components/ServiceSlider";
+import img1 from "../assets/images/service/fles1.jpeg"
+import img2 from "../assets/images/service/fles2.jpeg"
+import img3 from "../assets/images/service/fles3.jpeg"
+
 
 export default function FleasControl() {
   return (
@@ -95,9 +99,9 @@ export default function FleasControl() {
             <FaCameraRetro /> Real Treatment in Progress
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <img src="/images/flea1.jpg" alt="Flea Control 1" className="rounded shadow h-52 object-cover w-full" />
-            <img src="/images/flea2.jpg" alt="Flea Control 2" className="rounded shadow h-52 object-cover w-full" />
-            <img src="/images/flea3.jpg" alt="Flea Control 3" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img1} alt="Flea Control 1" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img2} alt="Flea Control 2" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img3} alt="Flea Control 3" className="rounded shadow h-52 object-cover w-full" />
           </div>
         </div>
 

@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 import VisitorCounter from "./VisitorCounter";
 import Translator from "./Translator";
 import bgImg from "../assets/fbg.PNG";
-import logo from "../assets/logo.png";
+import logo from "../assets/clogo.png";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -48,7 +48,7 @@ export default function Footer() {
       <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-sm">
         {/* About */}
         <div className="flex flex-col space-y-3">
-          <img src={logo} alt="Excel Pest Logo" className="w-[100px] md:w-[180px]" />
+          <img src={logo} alt="Excel Pest Logo" className="w-[120px] md:w-[120px]" />
           <h4 className="font-bold mb-2 text-3xl text-[#3CB371]">About Excel Pest</h4>
           <p className="leading-relaxed text-gray-800">
             Excel Pest Control Services is ISO 9001:2015 certified, operating since 2017. We deliver reliable pest control solutions across Delhi NCR, ensuring safety and satisfaction.
@@ -76,10 +76,10 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-800">
             {[
               ["Home", "/", <FaHome />],
-              ["Services", "/services", <FaTruck />],
-              ["Gallery", "/gallery", <FaImage />],
               ["About Us", "/about", <FaInfoCircle />],
+              ["Gallery", "/gallery", <FaImage />],
               ["Contact", "/contact", <FaPhoneAlt />],
+              ["Documentations", "/documentation", <FaTruck />],
             ].map(([text, link, icon], i) => (
               <li key={i}>
                 <Link

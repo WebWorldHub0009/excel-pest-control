@@ -20,6 +20,7 @@ import Spider from './page/Spider'
 import Flies from './page/Flies'
 import Lizard from './page/Lizard'
 import BedBugs from './page/BedBugs'
+import Gallery from './page/Gallery'
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
       <Route path="/" element={<Home/>} />
        <Route path="/about" element={<AboutPage/>} />
        <Route path="/contact" element={<Contact/>} />
+        <Route path="/gallery" element={<Gallery/>} />
        <Route path="/documentation" element={<CertificationPage/>} />
 
         <Route path="/services/pest-control" element={<Pestcontrol/>} />

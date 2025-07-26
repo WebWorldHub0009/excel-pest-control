@@ -8,6 +8,9 @@ import {
   FaCameraRetro,
 } from "react-icons/fa";
 import ServiceSlider from "../components/ServiceSlider";
+import img1 from "../assets/images/service/l1.jpeg"
+import img2 from "../assets/images/service/l2.jpeg"
+import img3 from "../assets/images/service/l3.jpeg"
 
 export default function LizardControl() {
   return (
@@ -96,17 +99,17 @@ export default function LizardControl() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <img
-              src="/images/lizard1.jpg"
+              src={img1}
               alt="Lizard Control 1"
               className="rounded shadow h-52 object-cover w-full"
             />
             <img
-              src="/images/lizard2.jpg"
+              src={img2}
               alt="Lizard Control 2"
               className="rounded shadow h-52 object-cover w-full"
             />
             <img
-              src="/images/lizard3.jpg"
+              src={img3}
               alt="Lizard Control 3"
               className="rounded shadow h-52 object-cover w-full"
             />

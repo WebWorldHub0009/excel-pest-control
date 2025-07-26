@@ -3,6 +3,11 @@ import { FaExclamationTriangle, FaCheckCircle, FaBug, FaVirus, FaMicroscope, FaC
 import { GiRat, GiChewedSkull, GiDeadHead, GiPoisonBottle } from "react-icons/gi";
 import ServiceSlider from "../components/ServiceSlider";
 
+import img1 from "../assets/images/service/rat1.jpg"
+import img2 from "../assets/images/service/rat2.jpg"
+import img3 from "../assets/images/service/rat3.jpeg"
+
+
 export default function RodentControl() {
   return (
     <>
@@ -81,9 +86,9 @@ export default function RodentControl() {
         <div className="mt-10">
           <h2 className="text-2xl font-semibold mb-4 text-[#006644] flex items-center gap-2"><FaCameraRetro /> Treatment in Action</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <img src="/images/rodent1.jpg" alt="Rodent Control 1" className="rounded shadow h-52 object-cover w-full" />
-            <img src="/images/rodent2.jpg" alt="Rodent Control 2" className="rounded shadow h-52 object-cover w-full" />
-            <img src="/images/rodent3.jpg" alt="Rodent Control 3" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img1} alt="Rodent Control 1" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img2} alt="Rodent Control 2" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img3} alt="Rodent Control 3" className="rounded shadow h-52 object-cover w-full" />
           </div>
         </div>
 

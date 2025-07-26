@@ -1,6 +1,9 @@
 import React from "react";
 import { FaExclamationTriangle, FaCheckCircle, FaBug, FaVirus, FaMicroscope, FaCameraRetro } from "react-icons/fa";
 import ServiceSlider from "../components/ServiceSlider";
+import img1 from "../assets/images/service/fles1.jpeg"
+import img2 from "../assets/images/service/fles2.jpeg"
+import img3 from "../assets/images/service/fles3.jpeg"
 
 export default function FliesControl() {
   return (
@@ -78,9 +81,9 @@ export default function FliesControl() {
         <div className="mt-10">
           <h2 className="text-2xl font-semibold mb-4 text-[#006644] flex items-center gap-2"><FaCameraRetro /> Treatment in Action</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <img src="/images/flies1.jpg" alt="Fly Control 1" className="rounded shadow h-52 object-cover w-full" />
-            <img src="/images/flies2.jpg" alt="Fly Control 2" className="rounded shadow h-52 object-cover w-full" />
-            <img src="/images/flies3.jpg" alt="Fly Control 3" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img1} alt="Fly Control 1" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img2} alt="Fly Control 2" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img3} alt="Fly Control 3" className="rounded shadow h-52 object-cover w-full" />
           </div>
         </div>
 

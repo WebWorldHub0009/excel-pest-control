@@ -2,41 +2,48 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaEye, FaDownload, FaShieldAlt } from "react-icons/fa";
 import CertificateHero from "../components/CertificateHero";
+import img1 from "../assets/images/doc/udyam.jpg"
+import img2 from "../assets/images/doc/cor.jpg"
+import img3 from "../assets/images/doc/par.jpg"
+import img4 from "../assets/images/doc/tran.jpg"
+import img5 from "../assets/images/doc/enuv.jpg"
+import img6 from "../assets/images/doc/gst.jpg"
+import img7 from "../assets/images/doc/lic.jpg"
 
 const certifications = [
   {
     title: "Udyam Registration Certificate",
-    file: "",
+    file: img1,
     thumbnail: "",
   },
   {
     title: "Certificate of Registration ",
-    file: "",
+    file: img2,
     thumbnail: "",
   },
   {
     title: "Certificate of Participation",
-    file: "",
+    file: img3,
     thumbnail: "",
   },
-    {
+ {
     title: "Certificate of SPS Product",
-    file: "",
+    file: img4,
     thumbnail: "",
   },
   {
     title: "ENVU Certificate",
-    file: "",
+    file: img5,
     thumbnail: "",
   },
   {
     title: "GST Certificate",
-    file: "",
+    file: img6,
     thumbnail: "",
   },
    {
     title: "Licence",
-    file: "",
+    file: img7,
     thumbnail: "",
   },
 ];

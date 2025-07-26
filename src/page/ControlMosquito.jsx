@@ -6,6 +6,10 @@ import {
   
 } from "react-icons/fa";
 import ServiceSlider from "../components/ServiceSlider";
+import img1 from "../assets/images/service/mos.avif"
+import img2 from "../assets/images/service/mos2.PNG"
+import img3 from "../assets/images/service/mos3.PNG"
+import img4 from "../assets/images/service/mos4.PNG"
 
 export default function MosquitoControl() {
   return (
@@ -119,22 +123,22 @@ export default function MosquitoControl() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             <img
-              src="/images/mosq1.jpg"
+              src={img1}
               alt="Fogging in residential society"
               className="rounded-xl shadow-md object-cover h-52 w-full"
             />
             <img
-              src="/images/mosq2.jpg"
+              src={img2}
               alt="Mosquito treatment indoor"
               className="rounded-xl shadow-md object-cover h-52 w-full"
             />
             <img
-              src="/images/mosq3.jpg"
+              src={img3}
               alt="Mosquito breeding area treatment"
               className="rounded-xl shadow-md object-cover h-52 w-full"
             />
             <img
-              src="/images/mosq4.jpg"
+              src={img4}
               alt="Larvicide treatment in water tank"
               className="rounded-xl shadow-md object-cover h-52 w-full"
             />

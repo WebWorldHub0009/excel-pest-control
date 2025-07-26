@@ -8,6 +8,11 @@ import {
   FaCameraRetro,
 } from "react-icons/fa";
 import ServiceSlider from "../components/ServiceSlider";
+import img1 from "../assets/images/service/ter1.jpeg"
+import img2 from "../assets/images/service/ter2.jpeg"
+import img3 from "../assets/images/service/ter3.jpeg"
+
+
 
 export default function TermiteControl() {
   return (
@@ -94,9 +99,9 @@ export default function TermiteControl() {
             <FaCameraRetro /> Termite Elimination in Action
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <img src="/images/termite1.jpg" alt="Termite Control 1" className="rounded shadow h-52 object-cover w-full" />
-            <img src="/images/termite2.jpg" alt="Termite Control 2" className="rounded shadow h-52 object-cover w-full" />
-            <img src="/images/termite3.jpg" alt="Termite Control 3" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img1} alt="Termite Control 1" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img2} alt="Termite Control 2" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img3} alt="Termite Control 3" className="rounded shadow h-52 object-cover w-full" />
           </div>
         </div>
 

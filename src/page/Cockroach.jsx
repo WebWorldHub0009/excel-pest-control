@@ -1,6 +1,10 @@
 import React from "react";
 import { FaExclamationTriangle, FaCheckCircle, FaBug, FaVirus, FaMicroscope, FaCameraRetro } from "react-icons/fa";
 import ServiceSlider from "../components/ServiceSlider";
+import img1 from "../assets/images/service/cock1.avif"
+import img2 from "../assets/images/service/cock2.jpg"
+import img3 from "../assets/images/service/cock3.jpg"
+
 
 export default function CockroachControl() {
   return (
@@ -78,9 +82,9 @@ export default function CockroachControl() {
         <div className="mt-10">
           <h2 className="text-2xl font-semibold mb-4 text-[#006644] flex items-center gap-2"><FaCameraRetro /> Treatment in Action</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <img src="/images/cockroach1.jpg" alt="Cockroach Control 1" className="rounded shadow h-52 object-cover w-full" />
-            <img src="/images/cockroach2.jpg" alt="Cockroach Control 2" className="rounded shadow h-52 object-cover w-full" />
-            <img src="/images/cockroach3.jpg" alt="Cockroach Control 3" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img1} alt="Cockroach Control 1" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img2} alt="Cockroach Control 2" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img3} alt="Cockroach Control 3" className="rounded shadow h-52 object-cover w-full" />
           </div>
         </div>
 

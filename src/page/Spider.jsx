@@ -1,6 +1,10 @@
 import React from "react";
 import { FaExclamationTriangle, FaCheckCircle, FaBug, FaVirus, FaMicroscope, FaCameraRetro } from "react-icons/fa";
 import ServiceSlider from "../components/ServiceSlider";
+import img1 from "../assets/images/service/spider.avif"
+import img2 from "../assets/images/service/spider2.avif"
+import img3 from "../assets/images/service/spider3.jpg"
+
 
 export default function SpiderControl() {
   return (
@@ -101,9 +105,9 @@ export default function SpiderControl() {
         <div className="mt-10">
           <h2 className="text-2xl font-semibold mb-4 text-[#006644] flex items-center gap-2"><FaCameraRetro /> Our Spider Control in Action</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <img src="/images/spider1.jpg" alt="Spider Control 1" className="rounded shadow h-52 object-cover w-full" />
-            <img src="/images/spider2.jpg" alt="Spider Control 2" className="rounded shadow h-52 object-cover w-full" />
-            <img src="/images/spider3.jpg" alt="Spider Control 3" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img1} alt="Spider Control 1" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img2} alt="Spider Control 2" className="rounded shadow h-52 object-cover w-full" />
+            <img src={img3} alt="Spider Control 3" className="rounded shadow h-52 object-cover w-full" />
           </div>
         </div>
 

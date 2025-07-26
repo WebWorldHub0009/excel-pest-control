@@ -8,6 +8,11 @@ import {
   FaCameraRetro,
 } from "react-icons/fa";
 import ServiceSlider from "../components/ServiceSlider";
+import img1 from "../assets/images/service/wood1.jpg"
+import img2 from "../assets/images/service/wood2.jpg"
+import img3 from "../assets/images/service/wood3.jpg"
+
+
 
 export default function WoodBorerControl() {
   return (
@@ -96,17 +101,17 @@ export default function WoodBorerControl() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <img
-              src="/images/woodborer1.jpg"
+              src={img1}
               alt="Wood Borer Control 1"
               className="rounded shadow h-52 object-cover w-full"
             />
             <img
-              src="/images/woodborer2.jpg"
+              src={img2}
               alt="Wood Borer Control 2"
               className="rounded shadow h-52 object-cover w-full"
             />
             <img
-              src="/images/woodborer3.jpg"
+              src={img3}
               alt="Wood Borer Control 3"
               className="rounded shadow h-52 object-cover w-full"
             />

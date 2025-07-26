@@ -8,6 +8,10 @@ import {
   FaCameraRetro,
 } from "react-icons/fa";
 import ServiceSlider from "../components/ServiceSlider";
+import img1 from "../assets/images/service/bed1.jpg"
+import img2 from "../assets/images/service/bed2.avif"
+import img3 from "../assets/images/service/bed3.avif"
+
 
 export default function BedBugsControl() {
   return (
@@ -95,17 +99,17 @@ export default function BedBugsControl() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <img
-              src="/images/bedbug1.jpg"
+              src={img1}
               alt="Bed Bug Control 1"
               className="rounded shadow h-52 object-cover w-full"
             />
             <img
-              src="/images/bedbug2.jpg"
-              alt="Bed Bug Control 2"
+              src={img2}
+             alt="Bed Bug Control 2"
               className="rounded shadow h-52 object-cover w-full"
             />
             <img
-              src="/images/bedbug3.jpg"
+              src={img3}
               alt="Bed Bug Control 3"
               className="rounded shadow h-52 object-cover w-full"
             />
